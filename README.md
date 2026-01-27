@@ -1,34 +1,27 @@
 # Qwen2.5-VL
 
-Qwen2.5-VL is a state-of-the-art vision-language model that enables advanced multimodal understanding and reasoning capabilities.
-
-## Overview
-
-This model is designed for a wide range of vision-language tasks, including but not limited to:
-- Visual question answering
-- Image captioning
-- Document understanding
-- Visual grounding
-- Multimodal reasoning
+[Qwen2.5-VL](https://qwenlm.github.io/blog/qwen2.5-vl/) is a vision-language model developed by the Qwen team at Alibaba Cloud. It achieves state-of-the-art performance on various multimodal benchmarks.
 
 ## Features
 
-- Advanced vision encoding
-- Multimodal instruction following
-- Long context understanding
-- Strong reasoning capabilities
+- Advanced vision-language understanding
+- Multi-modal reasoning capabilities
+- High performance on visual question answering and document understanding tasks
 
 ## Installation
 
 ```bash
-pip install -r requirements.txt
+pip install transformers torch
 ```
 
-## Usage
+## Quick Start
 
-Please refer to the documentation for detailed usage instructions.
+```python
+from transformers import AutoModelForVision2Seq, AutoProcessor
 
----
+model = AutoModelForVision2Seq.from_pretrained("Qwen/Qwen2.5-VL-7B-Instruct")
+processor = AutoProcessor.from_pretrained("Qwen/Qwen2.5-VL-7B-Instruct")
+```
 
 ## Related Projects
 
